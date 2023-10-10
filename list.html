@@ -8,13 +8,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script>
+    function edit_num(){
+
+    }
     function delete_num(){
-      if(confirm("정말 삭제하시겠습니까?") == true){
-        return;
-      }
-      else{
-        return;
-      }
+
     }
   </script>
   <style>
@@ -33,17 +31,9 @@
       background-color: #f1f1f1;
       height: 100%;
     }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
+        .sidenav {
         height: auto;
         padding: 15px;
       }
@@ -68,7 +58,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav"></ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
@@ -76,17 +66,10 @@
     </div>
   </div>
 </nav>
-  
+
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-        <img src="blank.png" style="width:100px; height:100px;">
-        <p>이름 : 한상화</p>
-        <p>성별 : 남</p>
-        <p>생년월일 : 2000.03.14</p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-        <h2 class="sub-header">Contact</h2>
+    <h2 class="sub-header">Contact</h2>
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>
@@ -94,150 +77,121 @@
                 <th>#</th>
                 <th>이름</th>
                 <th>전화번호</th>
-                <th>성별</th>
                 <th>관계</th>
-                <th>메뉴</th>
+      
               </tr>
             </thead>
-            <tbody>
+            <tbody style="text-align: left;">
               <tr>
                 <td>1</td>
                 <td>어머니</td>
                 <td>010-1234-5555</td>
-                <td>여자</td>
                 <td>가족</td>
-                <td><button onclick="location.href='edit.html'">수정</button> <button onclick="delete_num()">삭제</button> <button onclick="location.href='view.html'">상세정보</button></td>
+                
               </tr>
               <tr>
                 <td>2</td>
                 <td>아버지</td>
                 <td>010-2345-3423</td>
-                <td>남자</td>
                 <td>가족</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>3</td>
                 <td>여동생</td>
                 <td>010-3424-7665</td>
-                <td>여자</td>
                 <td>가족</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>4</td>
                 <td>할머니</td>
                 <td>010-3948-8384</td>
-                <td>여자</td>
                 <td>가족</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>5</td>
                 <td>우리집</td>
                 <td>010-3573-7563</td>
-                <td>남자</td>
                 <td>가족</td>
-                <td><button >수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>6</td>
                 <td>신짱구</td>
                 <td>010-4837-4737</td>
-                <td>남자</td>
                 <td>친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>7</td>
                 <td>장소연 교수님</td>
                 <td>010-3783-3475</td>
-                <td>여자</td>
                 <td>학교</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+              
               </tr>
               <tr>
                 <td>8</td>
                 <td>흰둥이</td>
                 <td>010-4475-2848</td>
-                <td>남자</td>
                 <td>가족</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>9</td>
                 <td>철수</td>
                 <td>010-3847-4756</td>
-                <td>남자</td>
                 <td>친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>10</td>
                 <td>두목님</td>
                 <td>010-4636-1234</td>
-                <td>남자</td>
                 <td>회사</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>11</td>
                 <td>맹구</td>
                 <td>010-3848-9876</td>
-                <td>남자</td>
                 <td>친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>12</td>
                 <td>영희</td>
                 <td>010-3846-9765</td>
-                <td>여자</td>
                 <td>친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>13</td>
                 <td>브라운 박사님</td>
                 <td>010-3846-8757</td>
-                <td>남자</td>
                 <td>비밀친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>14</td>
                 <td>코난</td>
                 <td>010-3846-2222</td>
-                <td>남자</td>
                 <td>비밀친구</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+                
               </tr>
               <tr>
                 <td>15</td>
                 <td>치코파닭</td>
                 <td>054-241-9922</td>
-                <td>여자</td>
                 <td>단골식당</td>
-                <td><button>수정</button> <button onclick="delete_num()">삭제</button></td>
+      
               </tr>
             </tbody>
           </table>
         </div>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well" href="#">
-        <a href="add.html">새로운 번호 추가</a>
-      </div>
-      <div class="well" href="#">
-        <a href="list.html">리스트 보기</a>
-      </div>
-    </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
 
 </body>
 </html>

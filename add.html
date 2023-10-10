@@ -76,12 +76,19 @@
         <input type="text" id="uname" name="uname" required><br><br>
         <label for="mobile">전화번호 :</label>
         <input type="text" id="mobile" name="mobile" placeholder="00*-000*-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}" maxlength="13" required><br><br>
+        <label for="genders">성별 :</label>
+        <input type="radio" id="genders" name="genders" value="M" checked>남 <input type="radio" name="genders" value="W" >여 <br><br>
         <label for="relation">관계 :</label>
-        <input type="radio" id="r1" name="relation" value="가족" checked>가족
-        <input type="radio" id="r2" name="relation" value="친구">친구
-        <input type="radio" id="r3" name="relation" value="회사">회사
-        <input type="radio" id="r4" name="relation" value="사회">사회
-        <input type="radio" id="r5" name="relation" value="기타">기타<br><br><br>
+        <input type="checkbox" id="r1" name="relation1" value="가족" checked>가족
+        <input type="checkbox" id="r1" name="relation2" value="친구">친구
+        <input type="checkbox" id="r1" name="relation3" value="회사">회사
+        <input type="checkbox" id="r1" name="relation4" value="사회">사회
+        <input type="checkbox" id="r1" name="relation5" value="기타">기타<br><br>
+        <label for="email">Gmail :
+          <input type="email" id="email" pattern=".+@gmail\.com" placeholder="example@gmail.com" required>
+        </label><br><br>
+        <label for="birthday">생년월일 : </label>
+        <input type="date" min="1900-01-01" max="2023-10-10" name="birthday"><br><br>
         <input type="submit" value="저장">
         <input type="reset" value="초기화">
     </form>
@@ -109,9 +116,7 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+
 
 </body>
 </html>
